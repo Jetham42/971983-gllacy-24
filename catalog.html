@@ -22,7 +22,7 @@
       <symbol xmlns="http://www.w3.org/2000/svg" width="15" height="13" id="icon-footer-heart"><path d="M10.8 0C9.4 0 8.2.7 7.5 1.7 6.7.7 5.5 0 4.2 0A4.1 4.1 0 0 0 0 4c0 3.2 7.5 9 7.5 9S15 7.2 15 4c0-2.2-1.9-4-4.2-4z"/></symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" width="27" height="23" id="icon-checkbox-on"><path d="M7.3 7.5l-2.8 2.8 7.7 7.8 14-14-2.9-2.8-11 11.1z"/><path d="M21 20c0 .5-.5 1-1 1H3a1 1 0 0 1-1-1V3c0-.5.5-1 1-1h17L21.4.4A3 3 0 0 0 20 0H3a3 3 0 0 0-3 3v17a3 3 0 0 0 3 3h17a3 3 0 0 0 3-3v-9.8l-2 2V20z"/></symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" width="8" height="12" id="icon-pagination-nav"><path d="M7.2 5.6L1.7.1a.5.5 0 1 0-.7.7L6.2 6 1 11.2a.5.5 0 0 0 .7.7l5.5-5.5c.2-.2.2-.6 0-.8z"/></symbol>
-      <symbol xmlns="http://www.w3.org/2000/svg" width="11" height="11" id="icon-cart-cross"><path d="M11 .7l-.7-.7-4.8 4.8L.7 0 0 .7l4.8 4.8L0 10.3l.7.7 4.8-4.8 4.8 4.8.7-.7-4.8-4.8z"/></symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="icon-cross"><path d="M17.5 1.5L16 0 9 7 2 0 .5 1.5l7 7-7 7L2 17l7-7 7 7 1.5-1.5-7-7z"/></symbol>
     </svg>
     <header class="container">
         <nav class="main-nav">
@@ -69,51 +69,55 @@
             <section class="cart">
               <h2 class="visually-hidden">Интерфейс корзины</h2>
               <table>
-                <tr class="visually-hidden">
-                  <th>Кнопка удаления товара из корзины</th>
-                  <th>Изображение товара</th>
-                  <th>Название товара</th>
-                  <th>Вес умноженный на стоимость за килограмм</th>
-                  <th>Стоимость позиции</th>
-                </tr>
-                <tr>
-                  <td>
-                    <svg width="11" height="11">
-                      <use xlink:href='#icon-cart-cross'>
-                    </svg>
-                  </td>
-                  <td>
-                    <img src="img/product-1.png" height="33" width="33" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
-                  </td>
-                  <td>
-                    <p>Пломбир с апельсиновым джемом</p>
-                  </td>
-                  <td>
-                    <p>1,5 кг х 200 руб.</p>
-                  </td>
-                  <td>
-                    <p>300 руб.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <svg width="11" height="11">
-                      <use xlink:href='#icon-cart-cross'>
-                    </svg>
-                  </td>
-                  <td>
-                    <img src="img/product-3.png" height="33" width="33" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
-                  </td>
-                  <td>
-                    <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                  </td>
-                  <td>
-                    <p>1,5 кг х 300 руб.</p>
-                  </td>
-                  <td>
-                    <p>450 руб.</p>
-                  </td>
-                </tr>
+                <thead>
+                  <tr class="visually-hidden">
+                    <th>Кнопка удаления товара из корзины</th>
+                    <th>Изображение товара</th>
+                    <th>Название товара</th>
+                    <th>Вес умноженный на стоимость за килограмм</th>
+                    <th>Стоимость позиции</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <svg width="11" height="11">
+                        <use xlink:href='#icon-cross'>
+                      </svg>
+                    </td>
+                    <td>
+                      <img src="img/product-1.png" height="33" width="33" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
+                    </td>
+                    <td>
+                      <p>Пломбир с апельсиновым джемом</p>
+                    </td>
+                    <td>
+                      <p>1,5 кг х 200 руб.</p>
+                    </td>
+                    <td>
+                      <p>300 руб.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <svg width="11" height="11">
+                        <use xlink:href='#icon-cross'>
+                      </svg>
+                    </td>
+                    <td>
+                      <img src="img/product-3.png" height="33" width="33" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
+                    </td>
+                    <td>
+                      <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                    </td>
+                    <td>
+                      <p>1,5 кг х 300 руб.</p>
+                    </td>
+                    <td>
+                      <p>450 руб.</p>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
               <p>Итого: 750 руб.</p>
               <button class="button inside-cart-button">Оформить заказ</button>
@@ -320,6 +324,7 @@
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item"><a href="#">
+              <span class="visually-hidden">Назад</span>
               <svg width="8" height="12">
                 <use xlink:href='#icon-pagination-nav'/>
               </svg>
@@ -330,6 +335,7 @@
             <li class="pagination-item"><a href="#">4</a></li>
             <li class="pagination-item"><a href="#">5</a></li>
             <li class="pagination-item"><a href="#">
+              <span class="visually-hidden">Вперед</span>
               <svg width="8" height="12">
                 <use xlink:href='#icon-pagination-nav'/>
               </svg>
