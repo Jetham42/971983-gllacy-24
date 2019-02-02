@@ -185,12 +185,19 @@
                 <option value="fat">По жирности</option>
               </select>
             </p>
-            <!-- <label class="filter-label" for="">Цена: 100 руб. - 500 руб.</label>
-            <input type="range" name="" id="" min="" max="" value=""> -->
-            <!-- Реализация двух полузнков возможно без js? -->
+            <div class="filter-item">
+              <p filter-label>Цена: 100 руб. – 500 руб.</p>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>
+            </div>
             <fieldset class="filter-item">
               <legend class="filter-label">Жирность:</legend>
-              <ul>
+              <ul class="translucent-filter-item">
                 <li>
                   <input type="radio" name="fat-content" id="fat1" value="0">
                   <label for="fat1">0%</label>
@@ -211,7 +218,7 @@
             </fieldset>
             <fieldset class="filter-item">
               <legend class="filter-label">Наполнители:</legend>
-              <ul>
+              <ul class="translucent-filter-item">
                 <li>
                   <input type="checkbox" name="fillers" id="filler1" value="chocolate" checked>
                   <label for="filler1">шоколадные</label>
