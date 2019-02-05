@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Gllacy shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -26,16 +28,16 @@
     </svg>
     <header class="container">
       <nav class="main-nav">
-        <a class="header-logo">
+        <a class="header-logo" href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy shop">
         </a>
         <ul class="site-nav">
-          <li>
-            <a href="#">Каталог</a>
-            <ul class="site-nav-submenu">
+          <li class="nav-current">
+            <a>Каталог</a>
+            <ul class="site-nav-submenu popup">
               <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
+              <li сlass="nav-current"><a>Сливочное</a></li>
+              <li class="nav-current"><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li> 
             </ul>
@@ -50,25 +52,25 @@
       </nav>
       <ul class="user-block">
         <li>
-          <a class="button search-button" href="#">
+          <a class="search-button" href="#">
             <svg width="17" height="17">
               <use xlink:href='#icon-user-search'/>
             </svg>
           </a>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+          <form class="search-form popup" action="https://echo.htmlacademy.ru" method="GET">
             <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Что ищем?">
           </form>
         </li>
         <li>
-          <a class="button entrance-button" href="#">
+          <a class="entrance-button" href="#">
             <svg width="21" height="19">
               <use xlink:href='#icon-user-log-in'/>
             </svg>
             <span>Вход</span>
           </a>
           <h2 class="visually-hidden">Форма входа</h2>
-            <form class="log-in-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="log-in-form popup" action="https://echo.htmlacademy.ru" method="post">
               <p class="log-in-item">
                 <label class="visually-hidden" for="log-in-email">Электронная почта</label>
                 <input type="email" name="email" id="log-in-email" placeholder="Электронная почта" required>
@@ -83,20 +85,20 @@
                 </p>
               </div>
               <div class="right-column">
-                <a class="log-in-help" href="#">Забыли пароль?</a>
-                <a class="log-in-help" href="#">Новая регистрация</a>
+                <a class="login-help" href="#">Забыли пароль?</a>
+                <a class="login-help" href="#">Новая регистрация</a>
               </div>
             </form>
           </li> 
           <li>
-            <a class="button cart-button" href="#">
+            <a class="cart-button" href="#">
               <svg width="21" height="20">
                 <use xlink:href='#icon-user-cart'/>
               </svg>
               <span class="visually-hidden">Корзина:</span>
               <span>2 товара</span>
             </a>
-            <section class="cart">
+            <section class="cart popup">
               <h2 class="visually-hidden">Интерфейс корзины</h2>
               <table>
                 <thead>
@@ -429,7 +431,7 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">
+            <li class="pagination-item pagination-item-inactive"><a href="#">
               <span class="visually-hidden">Назад</span>
               <svg width="8" height="12">
                 <use xlink:href='#icon-pagination-nav'/>
@@ -453,25 +455,25 @@
     <footer class="container">
       <ul class="social-network">
         <li><a href="#" class="social-button social-button-twitter">
-          <span>Twitter</span>
+          <span class="visually-hidden">Twitter</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-twitter'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-instagram">
-          <span>Instagram</span>
+          <span class="visually-hidden">Instagram</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-instagram'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-fb">
-          <span>Facebook</span>
+          <span class="visually-hidden">Facebook</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-fb'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-vk">
-          <span>ВКонтакте</span>
+          <span class="visually-hidden">ВКонтакте</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-vk'/>
           </svg>

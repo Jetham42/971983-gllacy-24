@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Gllacy shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -32,8 +34,8 @@
         <ul class="site-nav">
           <li>
             <a href="#">Каталог</a>
-            <ul class="site-nav-submenu">
-              <li><a href="#">Новинки</a></li>
+            <ul class="site-nav-submenu popup">
+              <li><a href="#"><span>Новинки</span></a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -50,25 +52,25 @@
       </nav>
       <ul class="user-block">
         <li>
-          <a class="button search-button" href="#">
+          <a class="search-button" href="#">
             <svg width="17" height="17">
               <use xlink:href='#icon-user-search'/>
             </svg>
           </a>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+          <form class="search-form popup" action="https://echo.htmlacademy.ru" method="GET">
             <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Что ищем?">
           </form>
         </li>
         <li>
-          <a class="button entrance-button" href="#">
+          <a class="entrance-button" href="#">
             <svg width="21" height="19">
               <use xlink:href='#icon-user-log-in'/>
             </svg>
             <span>Вход</span>
           </a>
           <h2 class="visually-hidden">Форма входа</h2>
-          <form class="log-in-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="log-in-form popup" action="https://echo.htmlacademy.ru" method="post">
             <p class="log-in-item">
               <label class="visually-hidden" for="log-in-email">Электронная почта</label>
               <input type="email" name="email" id="log-in-email" placeholder="Электронная почта" required>
@@ -83,13 +85,13 @@
               </p>
             </div>
             <div class="right-column">
-              <a class="log-in-help" href="#">Забыли пароль?</a>
-              <a class="log-in-help" href="#">Новая регистрация</a>
+              <a class="login-help" href="#">Забыли пароль?</a>
+              <a class="login-help" href="#">Новая регистрация</a>
             </div>
           </form>
         </li>
         <li>
-          <a class="button cart-button" href="#">
+          <a class="cart-button" href="#">
             <svg width="21" height="20">
               <use xlink:href='#icon-user-cart'/>
             </svg>
@@ -123,9 +125,9 @@
             </li>
           </ul>
           <ul class="slider-nav">
-            <li><button class="button slider-nav-button">1</button></li>
-            <li><button class="button slider-nav-button">2</button></li>
-            <li><button class="button slider-nav-button">3</button></li>
+            <li><button class="slider-nav-button">Первый слайд</button></li>
+            <li><button class="slider-nav-button">Второй слайд</button></li>
+            <li><button class="slider-nav-button">Третий слайд</button></li>
           </ul>
         </section>
         <ul class="store-promotions-list">
@@ -270,7 +272,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="subscription-email">Электронная почта</label>
             <input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
-            <button class="button subscription-button" type="submit">Отправить</button>
+            <button class="subscription-button" type="submit">Отправить</button>
           </form>
         </section>
         <section class="contacts">
@@ -288,7 +290,7 @@
             <p class="number">
               Для заказов по телефону:
               <b>8 812 450-25-25</b>
-              (с 10 до 20 ежедневно)
+              <span>(с 10 до 20 ежедневно)</span>
             </p>
             <a href="#" class="button contact-button">Форма обратной связи</a>
           </div>
@@ -298,25 +300,25 @@
     <footer class="container">
       <ul class="social-network">
         <li><a href="#" class="social-button social-button-twitter">
-          <span>Twitter</span>
+          <span class="visually-hidden">Twitter</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-twitter'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-instagram">
-          <span>Instagram</span>
+          <span class="visually-hidden">Instagram</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-instagram'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-fb">
-          <span>Facebook</span>
+          <span class="visually-hidden">Facebook</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-fb'/>
           </svg>
         </a></li>
         <li><a href="#" class="social-button social-button-vk">
-          <span>ВКонтакте</span>
+          <span class="visually-hidden">ВКонтакте</span>
           <svg width="32" height="32">
             <use xlink:href='#icon-soc-vk'/>
           </svg>
@@ -346,7 +348,7 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class ="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <b>Мы обязательно вам ответим!</b>
@@ -364,7 +366,7 @@
         </p>
         <button type="submit">Отправить</button>
       </form>
-      <button class="button close-button">
+      <button class="close-button">
         <span class="visually-hidden">Закрыть</span>
         <svg width="18" height="17">
           <use xlink:href='#icon-cross'/>
