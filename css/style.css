@@ -143,19 +143,23 @@ a:active {
   list-style: none;
 }
 
-.slider-list:nth-child(1) {
+.slider-nav {
+  list-style: none;
+}
+
+.slider-item:nth-child(1) {
   background-image: url(../img/background-ice-cream-1.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.slider-list:nth-child(2) {
+.slider-item:nth-child(2) {
   background-image: url(../img/background-ice-cream-2.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.slider-list:nth-child(3) {
+.slider-item:nth-child(3) {
   background-image: url(../img/background-ice-cream-3.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -164,7 +168,7 @@ a:active {
 .button {
   color: #ffffff;
 
-  border: 0;
+  border: none;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
@@ -213,6 +217,10 @@ a.promotions-button {
 .chocolate-background {
   background-color: #825E50;
   background-image: url(../img/background-chocolate.jpg);
+}
+
+.catalog-list {
+  list-style: none;
 }
 
 .catalog-item a {
@@ -409,6 +417,55 @@ h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+}
+
+.filters ul{
+  list-style: none;
+}
+
+.filters-form {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.filter-label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-item option,
+.translucent-filter-item label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #323232;
+
+  background-color: #ffffff; 
+}
+
+.filter-button:active {
+  color: #323232;
+
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
 }
 
 .pagination-list {
