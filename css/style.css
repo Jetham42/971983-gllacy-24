@@ -164,6 +164,7 @@ a:active {
 .button {
   color: #ffffff;
 
+  border: 0;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
@@ -284,6 +285,7 @@ a.promotions-button {
 .subscription-block {
   color: #5a5a5a;
 
+  background-color: #f8f7f4;
   background-image:  linear-gradient(#f8f7f4,#f8f7f4),  url(../img/background-mail.svg);
   background-clip: padding-box,  border-box;
   border: 5px solid transparent;
