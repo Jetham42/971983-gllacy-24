@@ -175,10 +175,9 @@ a:active {
 }
 
 .button:active {
-  color: #fceeec;
-
   box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
   background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+
 }
 
 .slider-item>a {
@@ -200,15 +199,18 @@ a:active {
   font-weight: 41px;
 }
 
-.promotions-button {
-  font-weight: 24px;
+a.promotions-button {
+  color: #ffffff;
+  line-height: 24px;
 }
 
 .raspberries-background {
+  background-color: #8E1730;
   background-image: url(../img/background-raspberries.jpg);
 }
 
 .chocolate-background {
+  background-color: #825E50;
   background-image: url(../img/background-chocolate.jpg);
 }
 
@@ -231,6 +233,7 @@ a:active {
 }
 
 .catalog-item .catalog-item-button {
+  color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -239,6 +242,7 @@ a:active {
 .features {
   color: #323232;
 
+  background-color: #F4E3CB;
   background-image: url(../img/background-waffle.jpg)
 }
 
@@ -253,6 +257,7 @@ a:active {
 }
 
 .new-in-blog {
+  background-color: #FBF9F9;
   background-image: url(../img/news-background.jpg);
 }
 
@@ -279,11 +284,25 @@ a:active {
 .subscription-block {
   color: #5a5a5a;
 
-  background-image: url(../img/background-mail.svg);
+  background-image:  linear-gradient(#f8f7f4,#f8f7f4),  url(../img/background-mail.svg);
+  background-clip: padding-box,  border-box;
+  border: 5px solid transparent;
+  
 }
 
-.sibscription-button {
-  color: #fefefe;
+.subscription-block input{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #999999;
+}
+
+.subscription-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .contact-information {
@@ -320,12 +339,26 @@ a:active {
   font-weight: 22px;
 }
 
+a.contact-button {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 .social-network {
   list-style: none;
 }
 
 .social-button {
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .footer-links {
@@ -337,6 +370,12 @@ a:active {
 
 .footer-links a{
   color: #ffffff;
+}
+
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-links a:active {
+  color: #ffbc9e;
 }
 
 .favorite {
@@ -356,6 +395,12 @@ a:active {
 
 .breadcrumbs a {
   color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
 }
 
 h1 {
