@@ -12,7 +12,15 @@ body {
 }
 
 a {
+  color: #ffffff;
+
   text-decoration-color:  rgba(255, 255, 255, 0.2);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #ffbc9e;
 }
 
 .popup {
@@ -106,6 +114,13 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.user-block a:hover,
+.user-block a:focus {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
 .working-info {
   font-weight: 700;
 }
@@ -147,13 +162,23 @@ a {
 }
 
 .button {
-  box-shadow: 0px 2px 2px 0 #ac1000a3;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  color: #ffffff;
+
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 }
 
 .button:hover,
 .button:focus {
-  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));;
+  box-shadow: 0px 2px 2px 0 rgb(172, 16, 0);
+  background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.button:active {
+  color: #fceeec;
+
+  box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
+  background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
 }
 
 .slider-item>a {
@@ -188,14 +213,7 @@ a {
 }
 
 .catalog-item a {
-  color: #ffffff;
   font-size: 16px;
-}
-
-.catalog-item a:hover,
-.catalog-item a:focus,
-.catalog-item a:active {
-  color: #ffbc9e;
 }
 
 .catalog-item-price {
@@ -354,6 +372,24 @@ h1 {
   list-style: none;
 }
 
-.pagination-list a {
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+
+  pointer-events: none;
+  cursor: default;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
   color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+
+  background-color: #ffffff;
 }
