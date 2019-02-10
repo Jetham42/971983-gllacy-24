@@ -39,7 +39,7 @@ a:active {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1146px;
 }
 
 .header-wrapper {
@@ -164,7 +164,7 @@ a:active {
 .slider-block {
   display: flex;
   align-items: flex-end;
-  margin: 0 27px 41px 27px;
+  margin: 0 0 41px 0;
   padding: 0;
 }
 
@@ -235,7 +235,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 27px 40px 27px;
+  margin: 0 0 40px 0;
 
   font-size: 18px;
   font-weight: 700;
@@ -269,13 +269,12 @@ a.promotions-button {
 }
 
 .catalog {
-  margin: 0 27px 41px 27px;
+  margin: 0 0 41px 0;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -283,7 +282,18 @@ a.promotions-button {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   flex-basis: 267px;
+  margin-right: 24px;
+}
+
+.catalog-item h3 {
+  order: 1;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item a {
@@ -291,6 +301,7 @@ a.promotions-button {
 }
 
 .catalog-item-price {
+
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
@@ -305,6 +316,8 @@ a.promotions-button {
 }
 
 .catalog-item .catalog-item-button {
+  order: 2;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
@@ -312,7 +325,7 @@ a.promotions-button {
 }
 
 .features {
-  margin: 0 27px 41px 27px;
+  margin: 0 0 41px 0;
 
   color: #323232;
 
@@ -334,7 +347,7 @@ a.promotions-button {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 27px 40px 27px;
+  margin: 0 0 40px 0;
 }
 
 .new-in-blog {
@@ -391,6 +404,11 @@ a.promotions-button {
   font-weight: 700;
 }
 
+.map {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-information {
   color: #323232;
 
@@ -436,7 +454,7 @@ a.contact-button {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 37px 27px 0px 27px;
+  margin: 37px 0 0px 0;
 }
 
 .social-network {
@@ -483,7 +501,7 @@ a.contact-button {
 }
 
 .breadcrumbs {
-  margin: 0 27px 10px 27px;
+  margin: 0 0 10px 0;
   padding: 0;
 
   font-size: 14px;
@@ -503,7 +521,7 @@ a.contact-button {
 }
 
 .page-title {
-  margin: 0 27px 25px 27px;
+  margin: 0 0 25px 0;
 }
 
 h1 {
@@ -513,7 +531,7 @@ h1 {
 }
 
 .filters {
-  margin: 0 27px 40px 27px;
+  margin: 0 0 40px 0;
   padding: 0;
 }
 
@@ -573,7 +591,7 @@ h1 {
 .pagination-list {
   display: flex;
   justify-content: flex-end;
-  margin: 75px 27px 30px 27px; 
+  margin: 75px 0 30px 0; 
 
   line-height: 18px;
   font-weight: 500;
