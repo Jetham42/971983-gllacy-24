@@ -27,83 +27,87 @@
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="icon-cross"><path d="M17.5 1.5L16 0 9 7 2 0 .5 1.5l7 7-7 7L2 17l7-7 7 7 1.5-1.5-7-7z"/></symbol>
     </svg>
     <header class="container">
-      <nav class="main-nav">
-        <a class="header-logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Gllacy shop">
-        </a>
-        <ul class="site-nav">
-          <li>
-            <a href="#">Каталог</a>
-            <ul class="site-nav-submenu popup">
-              <li><a href="#"><span>Новинки</span></a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li> 
-            </ul>
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О комании</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="user-block">
-        <li>
-          <a class="search-button" href="#">
-            <svg width="17" height="17">
-              <use xlink:href='#icon-user-search'/>
-            </svg>
+      <div class="header-wrapper">
+        <nav class="main-nav">
+          <a class="header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Gllacy shop">
           </a>
-          <form class="search-form popup" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input type="search" name="search" id="search" placeholder="Что ищем?">
-          </form>
-        </li>
-        <li>
-          <a class="entrance-button" href="#">
-            <svg width="21" height="19">
-              <use xlink:href='#icon-user-log-in'/>
-            </svg>
-            <span>Вход</span>
-          </a>
-          <h2 class="visually-hidden">Форма входа</h2>
-          <form class="log-in-form popup" action="https://echo.htmlacademy.ru" method="post">
-            <p class="log-in-item">
-              <label class="visually-hidden" for="log-in-email">Электронная почта</label>
-              <input type="email" name="email" id="log-in-email" placeholder="Электронная почта" required>
-            </p>
-            <p class="log-in-item">
-              <label class="visually-hidden" for="log-in-password">Пароль</label>
-              <input type="password" name="password" id="log-in-password" placeholder="Пароль" required>
-            </p>
-            <div class="left-column">
-              <p class="log-in-item">
-                <button type="submit">Войти</button>
-              </p>
-            </div>
-            <div class="right-column">
-              <a class="login-help" href="#">Забыли пароль?</a>
-              <a class="login-help" href="#">Новая регистрация</a>
-            </div>
-          </form>
-        </li>
-        <li>
-          <a class="cart-button" href="#">
-            <svg width="21" height="20">
-              <use xlink:href='#icon-user-cart'/>
-            </svg>
-            <span class="visually-hidden">Корзина:</span>
-            <span>Пусто</span>
-          </a>
-        </li>
-      </ul>
-      <p class="working-info">
-        <span class="working-hours">С 10 до 20, ежедневно</span>
-        <span class="number">8 812 450-25-25</span>
-      </p>
+          <ul class="site-nav">
+            <li>
+              <a href="#">Каталог</a>
+              <ul class="site-nav-submenu">
+                <li><a href="#"><span>Новинки</span></a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li> 
+              </ul>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">О Компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-column-wrapper">
+          <ul class="user-block">
+            <li>
+              <a class="search-button" href="#">
+                <svg width="17" height="17">
+                  <use xlink:href='#icon-user-search'/>
+                </svg>
+              </a>
+              <form class="search-form popup" action="https://echo.htmlacademy.ru" method="GET">
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input type="search" name="search" id="search" placeholder="Что ищем?">
+              </form>
+            </li>
+            <li>
+              <a class="entrance-button" href="#">
+                <svg width="21" height="19">
+                  <use xlink:href='#icon-user-log-in'/>
+                </svg>
+                <span>Вход</span>
+              </a>
+              <h2 class="visually-hidden">Форма входа</h2>
+              <form class="log-in-form popup" action="https://echo.htmlacademy.ru" method="post">
+                <p class="log-in-item">
+                  <label class="visually-hidden" for="log-in-email">Электронная почта</label>
+                  <input type="email" name="email" id="log-in-email" placeholder="Электронная почта" required>
+                </p>
+                <p class="log-in-item">
+                  <label class="visually-hidden" for="log-in-password">Пароль</label>
+                  <input type="password" name="password" id="log-in-password" placeholder="Пароль" required>
+                </p>
+                <div class="left-column">
+                  <p class="log-in-item">
+                    <button type="submit">Войти</button>
+                  </p>
+                </div>
+                <div class="right-column">
+                  <a class="login-help" href="#">Забыли пароль?</a>
+                  <a class="login-help" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </li>
+            <li>
+              <a class="cart-button" href="#">
+                <svg width="21" height="20">
+                  <use xlink:href='#icon-user-cart'/>
+                </svg>
+                <span class="visually-hidden">Корзина:</span>
+                <span>Пусто</span>
+              </a>
+            </li>
+          </ul>
+          <p class="working-info">
+            <span class="working-hours">С 10 до 20, ежедневно</span>
+            <span class="number">8 812 450-25-25</span>
+          </p>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
@@ -115,11 +119,11 @@
               <p>Крем-брюле и пломбир с малиновым джемом</p>
               <a href="#" class="button slider-button">Давайте оба!</a>
             </li>
-            <li class="slider-item">
+            <li class="slider-item popup">
               <p>Шоколадный пломбир и лимонный сорбет </p>
               <a href="#" class="button slider-button">Давайте оба!</a>
             </li>
-            <li class="slider-item">
+            <li class="slider-item popup">
               <p>Пломбир с помадкой и клубничный щербет</p>
               <a href="#" class="button slider-button">Давайте оба!</a>
             </li>
@@ -260,21 +264,23 @@
             </li>
           </ul>
         </section>
-        <article class="new-in-blog">
-          <h2>Новое в нашем блоге</h2>
-          <p class="new-article">
-            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-          </p>
-        </article>
-        <section class="subscription-block">
-          <h2 class="visually-hidden">Подписка</h2>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-            <input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
-            <button class="button subscription-button" type="submit">Отправить</button>
-          </form>
-        </section>
+        <div class="index-wrapper">
+          <article class="new-in-blog">
+            <h2>Новое в нашем блоге</h2>
+            <p class="new-article">
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </p>
+          </article>
+          <section class="subscription-block">
+            <h2 class="visually-hidden">Подписка</h2>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+              <input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
+              <button class="button subscription-button" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
         <section class="contacts">
           <h2 class="visually-hidden">Контактная нформация</h2>  
           <div class="map">
@@ -298,54 +304,56 @@
       </div>
     </main>
     <footer class="container">
-      <ul class="social-network">
-        <li><a href="#" class="social-button social-button-twitter">
-          <span class="visually-hidden">Twitter</span>
-          <svg width="32" height="32">
-            <use xlink:href='#icon-soc-twitter'/>
-          </svg>
-        </a></li>
-        <li><a href="#" class="social-button social-button-instagram">
-          <span class="visually-hidden">Instagram</span>
-          <svg width="32" height="32">
-            <use xlink:href='#icon-soc-instagram'/>
-          </svg>
-        </a></li>
-        <li><a href="#" class="social-button social-button-fb">
-          <span class="visually-hidden">Facebook</span>
-          <svg width="32" height="32">
-            <use xlink:href='#icon-soc-fb'/>
-          </svg>
-        </a></li>
-        <li><a href="#" class="social-button social-button-vk">
-          <span class="visually-hidden">ВКонтакте</span>
-          <svg width="32" height="32">
-            <use xlink:href='#icon-soc-vk'/>
-          </svg>
-        </a></li>
-      </ul>
-      <ul class="footer-links">
-        <li class="favorite">
-          <svg width="15" height="13">
-            <use xlink:href='#icon-footer-heart'/>
-          </svg>
-          <a href="#">Для поставщиков</a>
-        </li>
-        <li>
-          <a href="#">О производстве</a>
-        </li>
-        <li>
-          <a href="#">Наши документы</a>
-        </li>
-        <li>
-          <a href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-      <div class="copyright-block">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-        </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      <div class="footer-wrapper">
+        <ul class="social-network">
+          <li><a href="#" class="social-button social-button-twitter">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="32" height="32">
+              <use xlink:href='#icon-soc-twitter'/>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-button social-button-instagram">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="32" height="32">
+              <use xlink:href='#icon-soc-instagram'/>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-button social-button-fb">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="32" height="32">
+              <use xlink:href='#icon-soc-fb'/>
+            </svg>
+          </a></li>
+          <li><a href="#" class="social-button social-button-vk">
+            <span class="visually-hidden">ВКонтакте</span>
+            <svg width="32" height="32">
+              <use xlink:href='#icon-soc-vk'/>
+            </svg>
+          </a></li>
+        </ul>
+        <ul class="footer-links">
+          <li class="favorite">
+            <svg width="15" height="13">
+              <use xlink:href='#icon-footer-heart'/>
+            </svg>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        <div class="copyright-block">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          </a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        </div>
       </div>
     </footer>
     <section class="modal modal-feedback popup">
