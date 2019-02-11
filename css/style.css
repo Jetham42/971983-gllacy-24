@@ -45,20 +45,49 @@ a:active {
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 27px;
+  padding: 0;
 }
 
 .main-nav {
   display: flex;
+  justify-content: space-between;
   margin: 0;
-  margin-right: 374px;
   padding: 0;
+}
+
+.header-logo {
+  padding: 9px 0 0 0;
+}
+
+.site-nav {
+  display: flex;
+  align-content: flex-start;
+  margin: 14px 0 18px 0;
+  padding: 0;
+}
+
+.site-nav li {
+  max-height: 32px;
+  padding: 9px 13px 10px 14px;
 }
 
 .header-column-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.user-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-block li {
+  padding-right: 10px;
+}
+
+.user-block li:last-child {
+  padding-right: 0;
 }
 
 .site-nav,
@@ -148,10 +177,16 @@ a:active {
 }
 
 .working-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
   font-weight: 700;
 }
 
 .working-hours {
+  margin: 0 0 6px 0;
+
   font-size: 14px;
   line-height: 16px;
 }
@@ -410,6 +445,9 @@ a.promotions-button {
 }
 
 .contact-information {
+  display: flex;
+  justify-content: flex-end;
+
   color: #323232;
 
   background-color: #ffffff; 
@@ -458,9 +496,14 @@ a.contact-button {
 }
 
 .social-network {
+  display: flex;
   padding: 0;
 
   list-style: none;
+}
+
+.social-network li {
+  margin: 0 11px 0 0;
 }
 
 .social-button {
@@ -474,10 +517,21 @@ a.contact-button {
 }
 
 .footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 350px;
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   
   list-style: none;
+}
+
+.footer-links li:nth-child(2n+3) {
+  padding-left: 22px;
 }
 
 .footer-links a{
