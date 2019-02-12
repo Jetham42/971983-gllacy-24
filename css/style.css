@@ -187,12 +187,13 @@ a:active {
 .slider-block {
   display: flex;
   align-items: flex-end;
-  margin: 0 0 41px 0;
+  margin: 0;
   padding: 0;
 }
 
 .slider-list {
-  width: 665px;
+  margin: 0;
+  padding: 0;
 
   font-size: 60px;
   line-height: 60px;
@@ -207,6 +208,12 @@ a:active {
   padding: 0;
 
   list-style: none;
+}
+
+.slider-item {
+  margin: -30px 0 -15px 0;
+  width: 1045px;
+  height: 881px;
 }
 
 .slider-item:nth-child(1) {
@@ -433,8 +440,8 @@ a.promotions-button {
 }
 
 .contact-information {
-  display: flex;
-  justify-content: flex-end;
+  width: 220px;
+  padding: 30px 25px;
 
   color: #323232;
 
@@ -442,6 +449,8 @@ a.promotions-button {
 }
 
 .contact-information .address {
+  margin: 0 0 17px 0;
+
   font-size: 14px;
   line-height: 20px;
 }
@@ -454,6 +463,8 @@ a.promotions-button {
 }
 
 .contact-information .number {
+  margin: 0 0 37px 0;
+
   font-size: 14px;
   line-height: 20px;
 }
@@ -575,6 +586,10 @@ h1 {
 }
 
 .filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+
   font-family: inherit;
   font-weight: 500;
 }
@@ -582,6 +597,20 @@ h1 {
 .filter-label {
   font-size: 14px;
   line-height: 16px;
+}
+
+.filter-item {
+  padding: 0;
+  margin: 0 14px 17px 0;
+}
+
+.filter-item select,
+.translucent-filter-item {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
 }
 
 .filter-item .translucent-filter-item {
@@ -595,6 +624,9 @@ h1 {
 }
 
 .filters fieldset {
+  margin: 0 14px 0 0;
+  padding: 0;
+
   border: none;
 }
 
