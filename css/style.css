@@ -515,10 +515,6 @@ a.contact-button {
   list-style: none;
 }
 
-.footer-links li:nth-child(2n+3) {
-  padding-left: 22px;
-}
-
 .footer-links a{
   color: #ffffff;
 }
