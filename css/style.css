@@ -36,23 +36,17 @@ a:active {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  max-width: 1146px;
+  width: 1146px;
 }
 
-.header-wrapper {
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 0;
 }
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .header-logo {
@@ -69,12 +63,6 @@ a:active {
 .site-nav li {
   max-height: 32px;
   padding: 9px 13px 10px 14px;
-}
-
-.header-column-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .user-block {
@@ -204,7 +192,7 @@ a:active {
 }
 
 .slider-list {
-  max-width: 665px;
+  width: 665px;
 
   font-size: 60px;
   line-height: 60px;
@@ -304,7 +292,7 @@ a.promotions-button {
 }
 
 .catalog {
-  margin: 0 0 41px 0;
+  margin: 0 0 40px 0;
 }
 
 .catalog-list {
@@ -489,15 +477,16 @@ a.contact-button {
   font-weight: 700;
 }
 
-.footer-wrapper {
+.footer {
   display: flex;
   justify-content: space-between;
-  margin: 37px 0 0px 0;
+  margin-top: 37px;
 }
 
 .social-network {
   display: flex;
   padding: 0;
+  margin: 0;
 
   list-style: none;
 }
@@ -517,12 +506,8 @@ a.contact-button {
 }
 
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 350px;
-  margin: 0;
-  padding: 0;
+  column-count: 2;
+  column-gap: 32px;
 
   font-size: 13px;
   line-height: 18px;
