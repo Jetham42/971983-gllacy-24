@@ -1174,19 +1174,32 @@ h1 {
 }
 
 .cart {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
   position: absolute;
-  right: 200px;
+  right: 0px;
   z-index: 2;
-  width: 490px;
-  padding: 20px 34px 20px 16px;
+  box-sizing: border-box;
+  width: 540px;
+  padding: 20px 30px 20px 16px;
 
   color: #323232;
 
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+li:hover .cart,
+li:focus .cart {
+  display: flex;
 }
 
 .cart table {
+  margin: 0 0 32px 0;
+
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -1194,16 +1207,76 @@ h1 {
   border-collapse: collapse;
 }
 
+.cart tr {
+  display: block;
+  padding: 0 0 20px 0;
+}
+
+.cart tr:last-child {
+  padding: 0;
+}
+
 .cart td {
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .delete-button {
   display: block;
-  margin: 0 0 10px 0; 
+  margin: 0 14px 0 0; 
   padding: 0;
 
   border: none;
   background-color: transparent;
+}
+
+.item-cell img {
+  margin: 0 14px 0 0;
+}
+
+.cart p {
+  padding: 0;
+  margin: 0;
+}
+
+.name-cell p {
+  width: 217px;
+  margin: 0 30px 0 0;
+}
+
+.quantity-cell p {
+  width: 95px;
+  margin: 0 29px 0 0;
+}
+
+.quantity-cell span {
+  color: #999999;
+}
+
+.cart > p {
+  display: block;
+  margin: 0 -18px 16px 0;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.cart::after {
+  content: "";
+  position: absolute;
+  bottom: 110px;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+
+  background-color: #cacac7;
+}
+
+.inside-cart-button {
+  margin: 0 -16px 0 0;
+  padding: 10px 14px;
+  border-radius: 20px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
