@@ -39,15 +39,17 @@ a:active {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+
+  border: 0;
+
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .container {
-  margin: 0 auto;
   width: 1146px;
+  margin: 0 auto;
 }
 
 .header {
@@ -1045,6 +1047,8 @@ h1 {
 }
 
 .filter-label {
+  margin: 0 0 5px 16px;
+
   font-size: 14px;
   line-height: 16px;
 }
@@ -1081,6 +1085,8 @@ h1 {
 }
 
 .filter-button {
+  padding: 5px 26px 5px 26px;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -1089,6 +1095,7 @@ h1 {
 
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
+  border-radius: 20px;
 }
 
 .filter-button:hover,
@@ -1103,6 +1110,64 @@ h1 {
 
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
+}
+
+.range-controls {
+  position: relative;
+
+  width: 220px;
+  height: 37px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  position: absolute;
+  top: 17px;
+  left: 22px;
+
+  width: 176px;
+  height: 4px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  position: absolute;
+  left: 16px;
+
+  width: 107px;
+  height: 4px;
+
+  background-color: #f8f7f4;
+}
+
+.range-controls .range-toggle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #849d8f;
+  border: 8px solid #f8f7f4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .range-toggle-min {
+  left: 35px;
+}
+
+.range-controls .range-toggle-max {
+  left: 133px;
+}
+
+.filter-item ul {
+
 }
 
 .pagination-list {
@@ -1306,4 +1371,80 @@ li:focus .cart {
 
   font-size: 18px;
   line-height: 24px;
+}
+
+.modal-feedback {
+  position: fixed;
+  top: 336px;
+  left: -239px;
+  z-index: 100;
+
+  width: 428px;
+  margin: 0 0 0 50%;
+  padding: 18px 25px 27px 25px;
+
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form b {
+  display: block;
+  margin: 0 0 18px 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form-item {
+  margin: 0 0 20px 0;
+}
+
+.feedback-form-item input,
+.feedback-form-item textarea {
+  padding: 10px 15px 8px 15px;
+
+  line-height: 24px;
+  font-family: inherit;
+  color: #999999;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.feedback-form-item input {
+  width: 236px;
+}
+
+.feedback-form-item textarea {
+  width: 396px;
+  padding: 10px 15px 0 15px;
+
+  resize: none;
+}
+
+.feedback-form .button {
+  align-self: flex-end;
+  padding: 10px 22px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border-radius: 20px;
+}
+
+.modal-feedback .close-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+
+  background-color: transparent;
+  border: none;
 }
