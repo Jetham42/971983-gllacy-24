@@ -53,6 +53,9 @@ a:active {
 }
 
 .header {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1279,8 +1282,8 @@ h1 {
   left: 0;
 
   box-sizing: border-box;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
 
   opacity: 0.8;
   border: 2px solid #f8f7f4;
