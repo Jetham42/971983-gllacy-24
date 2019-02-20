@@ -590,9 +590,10 @@ a.promotions-button {
 .catalog-item {
   position: relative;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  flex-basis: 267px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 267px;
   margin: 0 0 38px 0;
 }
 
@@ -1053,7 +1054,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  width: 860px;
+  width: 900px;
 
   font-family: inherit;
   font-weight: 500;
@@ -1100,7 +1101,8 @@ h1 {
 }
 
 .filter-button {
-  padding: 5px 26px 5px 26px;
+  padding: 7px 26px 8px 30px;
+  margin: 0 0 17px 0;
 
   font-family: inherit;
   font-size: 16px;
@@ -1199,19 +1201,27 @@ h1 {
   background-color: #f8f7f4;
 }
 
-.filter-item input {
-  display: none;
-}
-
-.filter-item .radio-indicator + label {
-  padding: 0 0 0 32px;
-}
-
 .translucent-filter-item li {
   position: relative;
 }
 
-.filter-item input[type="radio"] + .radio-indicator {
+.fatness li {
+  margin: 0 19px 0 0;
+}
+
+.fatness li:last-child {
+  margin: 0;
+}
+
+.fatness label {
+  padding: 0 0 0 32px;
+
+  cursor: pointer;
+}
+
+.filter-item input[type="radio"] + label::before  {
+  content: "";
+
   position: absolute;
   top: 0;
   left: 0;
@@ -1225,23 +1235,72 @@ h1 {
   border-radius: 50%;
 }
 
-.filter-item input[type="radio"]:focus + .radio-indicator, 
-.filter-item input[type="radio"]:hover + .radio-indicator{
-  opacity: 1;
-}
-
-.filter-item input[type="radio"]:checked + .radio-indicator::before {
+.filter-item input[type="radio"] + label::after {
   content: "";
 
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 7px;
+  left: 7px;
 
+  display: none;
   width: 8px;
   height: 8px;
 
+  opacity: 0.8;
   background-color: #f8f7f4;
   border-radius: 50%;
+}
+
+.filter-item input[type="radio"]:focus + label::after, 
+.filter-item input[type="radio"]:hover + label::before,
+.filter-item input[type="radio"]:focus + label::after, 
+.filter-item input[type="radio"]:hover + label::before,
+.filter-item input[type="checkbox"]:hover + label::before, 
+.filter-item input[type="checkbox"]:hover + label::before{
+  opacity: 1;
+}
+
+.filter-item input[type="radio"]:checked + label::after {
+  display: block;
+}
+
+.fillers label {
+  padding: 0 0 0 33px;
+
+  cursor: pointer;
+}
+
+.filter-item input[type="checkbox"] + label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+
+  opacity: 0.8;
+  border: 2px solid #f8f7f4;
+  border-radius: 3px;
+}
+
+.filter-item input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  height: 23px;
+
+  background: url(../img/checkbox-on.svg) no-repeat 0% 0%;
+  border: none;
+  border-radius: 0;
+}
+
+.fillers li {
+  margin: 0 20px 0 0;
+}
+
+.fillers li:last-child {
+  margin: 0;
 }
 
 .pagination-list {
