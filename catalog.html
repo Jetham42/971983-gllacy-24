@@ -199,27 +199,31 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+                <button class="range-toggle range-toggle-min"></button>
+                <button class="range-toggle range-toggle-max"></button>
               </div>
             </div>
             <fieldset class="filter-item">
               <legend class="filter-label">Жирность:</legend>
               <ul class="translucent-filter-item">
                 <li>
-                  <input type="radio" name="fat-content" id="fat1" value="0">
+                  <input class="visually-hidden" type="radio" name="fat-content" id="fat1" value="0">
+                  <span class="radio-indicator"></span>
                   <label for="fat1">0%</label>
                 </li>
                 <li>
-                  <input type="radio" name="fat-content" id="fat2" value="less10" checked>
+                  <input class="visually-hidden" type="radio" name="fat-content" id="fat2" value="less10" checked>
+                  <span class="radio-indicator"></span>
                   <label for="fat2">до 10%</label>
                 </li>
                 <li>
-                  <input type="radio" name="fat-content" id="fat3" value="less30">
+                  <input class="visually-hidden" type="radio" name="fat-content" id="fat3" value="less30">
+                  <span class="radio-indicator"></span>
                   <label for="fat3">до 30%</label>
                 </li>
                 <li>
-                  <input type="radio" name="fat-content" id="fat4" value="more30">
+                  <input class="visually-hidden" type="radio" name="fat-content" id="fat4" value="more30">
+                  <span class="radio-indicator"></span>
                   <label for="fat4">выше 30%</label>
                 </li>
               </ul>
@@ -228,23 +232,28 @@
               <legend class="filter-label">Наполнители:</legend>
               <ul class="translucent-filter-item">
                 <li>
-                  <input type="checkbox" name="fillers" id="filler1" value="chocolate" checked>
+                  <input class="visually-hidden" type="checkbox" name="fillers" id="filler1" value="chocolate" checked>
+                  <span class="checkbox-indicator"></span>
                   <label for="filler1">шоколадные</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="fillers" id="filler2" value="sugar" checked>
+                  <input class="visually-hidden" type="checkbox" name="fillers" id="filler2" value="sugar" checked>
+                  <span class="checkbox-indicator"></span>
                   <label for="filler2">сахарные присыпки</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="fillers" id="filler3" value="fruit">
+                  <input class="visually-hidden" type="checkbox" name="fillers" id="filler3" value="fruit">
+                  <span class="checkbox-indicator"></span>
                   <label for="filler3">фрукты</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="fillers" id="filler4" value="syrup">
+                  <input class="visually-hidden" type="checkbox" name="fillers" id="filler4" value="syrup">
+                  <span class="checkbox-indicator"></span>
                   <label for="filler4">сиропы</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="fillers" id="filler5" value="jam">
+                  <input class="visually-hidden" type="checkbox" name="fillers" id="filler5" value="jam">
+                  <span class="checkbox-indicator"></span>
                   <label for="filler5">джемы</label>
                 </li>
               </ul>
