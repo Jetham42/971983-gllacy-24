@@ -1,3 +1,4 @@
+var body = document.querySelector("body");
 var contact = document.querySelector(".contact-button");
 var popup = document.querySelector(".modal-feedback");
 var close = document.querySelector(".close-button");
@@ -21,6 +22,7 @@ try {
 contact.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("popup");
+  body.classList.add("blackout");
   popup.classList.add("modal-bounce");
 
   if (forenameStorage) {
@@ -39,6 +41,7 @@ contact.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  body.classList.remove("blackout");
   popup.classList.add("popup");
   popup.classList.remove("modal-error");
 });
@@ -61,6 +64,7 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (!(popup.classList.contains("popup"))) {
+      body.classList.remove("blackout");
       popup.classList.add("popup");
       popup.classList.remove("modal-error");
     }
