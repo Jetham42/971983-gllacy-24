@@ -94,7 +94,7 @@ a:active {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin: 22px 0 0 0;
+  margin: 23px 0 0 0;
 }
 
 .user-block li:last-child {
@@ -210,8 +210,8 @@ li:focus .site-nav-submenu {
 .user-block a{
   display: block;
   position: relative;
-  padding: 9px 17px 9px 45px;
-  margin: 0 0 6px 0;
+  padding: 8px 17px 8px 43px;
+  margin: 0 0 7px 0;
   border-radius: 20px;
 
   text-decoration: none;
@@ -231,12 +231,14 @@ li:focus .site-nav-submenu {
   width: 33px;
   height: 33px;
   padding: 0;
+
+  border-radius: 50%;
 }
 
 .search-button svg {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 7px;
   fill: #ffffff;
 }
 
@@ -346,8 +348,8 @@ li:focus .log-in-form {
 .entrance-button svg,
 .cart-button svg {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 6px;
+  left: 15px;
   fill: #ffffff;
 }
 
@@ -394,13 +396,13 @@ li:focus .log-in-form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 0;
+  margin: 10px 0 0 0;
 
   font-weight: 700;
 }
 
 .working-hours {
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -431,7 +433,7 @@ li:focus .log-in-form {
 .slider-nav {
   display: flex;
   position: absolute;
-  top: 570px;
+  top: 562px;
   margin: 0;
   order: -1;
   padding: 0;
@@ -449,7 +451,13 @@ li:focus .log-in-form {
   background-color: transparent;
 }
 
-.slider-nav-button-current {
+.slider-nav-button:hover,
+.slider-nav-button:focus {
+  background-color: rgba(248, 247, 244, 0.4);
+  cursor: pointer;
+}
+
+.slider-nav .slider-nav-button-current {
   background-color: #ffffff;
 }
 
@@ -458,13 +466,13 @@ li:focus .log-in-form {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin: -124px 0 -229px 0;
+  margin: -117px 0 -234px 0;
   height: 881px;
 }
 
 .slider-item p {
   width: 700px;
-  margin: 0 0 26px 0;
+  margin: 0 0 32px 0;
 
   text-align: center;
 }
@@ -489,6 +497,7 @@ li:focus .log-in-form {
 
 .button {
   color: #ffffff;
+  text-decoration: none;
 
   border: none;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -508,14 +517,14 @@ li:focus .log-in-form {
 }
 
 .slider-item a {
-  padding: 10px 42px;
-  margin: 0 0 270px 0;
+  padding: 9px 41px;
+  margin: 0 0 276px 0;
 
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 32px;
 }
 
 .store-promotions-list {
@@ -539,7 +548,7 @@ li:focus .log-in-form {
   box-sizing: border-box;
   width: 560px;
   height: 229px;
-  padding: 20px;
+  padding: 16px 20px 20px 19px;
 
   border-radius: 16px;
 }
@@ -559,7 +568,7 @@ li:focus .log-in-form {
 a.promotions-button {
   align-self: flex-end;
   margin: 43px 0 0 0;
-  padding: 10px 23px;
+  padding: 11px 21px;
 
   color: #ffffff;
   line-height: 24px;
@@ -597,6 +606,7 @@ a.promotions-button {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 267px;
   margin: 0 0 38px 0;
 }
@@ -629,7 +639,7 @@ a.promotions-button {
 
 .catalog-item h3 {
   order: 1;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   width: 96%;
 
   font-weight: 500;
@@ -694,6 +704,7 @@ a.promotions-button {
   z-index: 3;
   order: 2;
   padding: 9px 10px;
+  margin-top: 10px;
   margin-left: -100px;
 
   color: #ffffff;
@@ -712,7 +723,7 @@ a.promotions-button {
 
 .features {
   margin: 0 0 41px 0;
-  padding: 25px 20px 22px 20px;
+  padding: 25px 23px 22px 20px;
 
   color: #323232;
 
@@ -768,7 +779,7 @@ a.promotions-button {
 
 .new-in-blog {
   box-sizing: border-box;
-  flex-basis: 560px;
+  width: 560px;
   height: 220px;
   padding: 22px 100px 22px 20px;
 
@@ -806,7 +817,7 @@ a.promotions-button {
 
 .subscription-block {
   box-sizing: border-box;
-  flex-basis: 560px;
+  width: 560px;
   height: 220px;
   padding: 30px 18px 35px 21px;
 
@@ -827,7 +838,7 @@ a.promotions-button {
   box-sizing: border-box;
   width: 368px;
   margin: 0 8px 0 0;
-  padding: 10px 0 10px 15px;
+  padding: 8px 0 10px 15px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -861,16 +872,17 @@ a.promotions-button {
 .contact-information {
   box-sizing: border-box;
   position: absolute;
+  top: 425px;
   left: 50%;
   -webkit-transform: translate(271px, -363px);
           transform: translate(271px, -363px);
   width: 302px;
-  padding: 30px 24px 42px 24px;
+  padding: 28px 24px 42px 25px;
 
   color: #323232;
 
   background-color: #ffffff; 
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .contact-information .address {
@@ -897,6 +909,7 @@ a.promotions-button {
 
 .number b {
   display: block;
+  margin-top: 7px;
 
   font-size: 18px;
   line-height: 22px;
@@ -934,25 +947,28 @@ a.contact-button {
 }
 
 .social-network li {
-  margin: 0 11px 0 0;
+  margin: 0 13px 0 0;
 }
 
+.social-network li:first-child {
+  margin-left: 1px;
+}
 
 .social-button svg {
   fill: rgba(255, 255, 255, 0.8);
-  border: 3px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
 .social-button:hover svg,
 .social-button:focus svg{
   fill: #ffffff;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-button:active svg {
   fill: rgba(255, 255, 255, 0.7);
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer-links {
@@ -993,7 +1009,7 @@ a.contact-button {
 }
 
 .copyright-block {
-  margin: 18px 0 0 0;
+  margin: 16px -2px 0 0;
 
   color: #fefefe;
   font-size: 12px;
@@ -1001,13 +1017,13 @@ a.contact-button {
 }
 
 .copyright-block p {
-  margin: 2px 0 0 0;
+  margin: -1px 1px 0 0;
 }
 
 .breadcrumbs {
   display: flex;
 
-  margin: 0 0 10px 0;
+  margin: -17px 0 4px 0;
   padding: 0;
 
   font-size: 14px;
@@ -1036,7 +1052,7 @@ a.contact-button {
 }
 
 .page-title {
-  margin: 0 0 25px 0;
+  margin: 0 0 22px 0;
 }
 
 h1 {
@@ -1046,7 +1062,7 @@ h1 {
 }
 
 .filters {
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
   padding: 0;
 }
 
@@ -1065,6 +1081,7 @@ h1 {
 }
 
 .filter-label {
+  display: block;
   margin: 0 0 5px 16px;
 
   font-size: 14px;
@@ -1073,7 +1090,7 @@ h1 {
 
 .filter-item {
   padding: 0;
-  margin: 0 14px 17px 0;
+  margin: 0 16px 17px 0;
 }
 
 .filter-item select,
@@ -1086,7 +1103,7 @@ h1 {
 }
 
 .filter-item .translucent-filter-item {
-  padding: 7px 18px 8px 15px;
+  padding: 7px 15px 8px 13px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1189,7 +1206,7 @@ h1 {
 }
 
 .filter-item select {
-  padding: 4px 15px 8px 16px;
+  padding: 6px 14px 7px 11px;
 
   color: #ffffff;
   text-transform: lowercase;
@@ -1218,7 +1235,7 @@ h1 {
 }
 
 .fatness label {
-  padding: 0 0 0 32px;
+  padding: 0 0 0 31px;
 
   cursor: pointer;
 }
@@ -1228,7 +1245,7 @@ h1 {
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
 
   box-sizing: border-box;
   width: 22px;
@@ -1244,7 +1261,7 @@ h1 {
 
   position: absolute;
   top: 7px;
-  left: 7px;
+  left: 6px;
 
   display: none;
   width: 8px;
@@ -1274,12 +1291,16 @@ h1 {
   cursor: pointer;
 }
 
+.filter-item .fillers {
+  padding: 7px 19px 8px 13px;
+}
+
 .filter-item input[type="checkbox"] + label::before {
   content: "";
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: 3px;
 
   box-sizing: border-box;
   width: 20px;
@@ -1394,6 +1415,7 @@ h1 {
   content: "";
   position: absolute;
   top: 50px;
+  left: 0;
   width: 1146px;
   height: 1px;
   
@@ -1513,7 +1535,7 @@ li:focus .cart {
 
 .modal-feedback {
   position: fixed;
-  top: 336px;
+  top: 250px;
   left: -239px;
   z-index: 100;
 
@@ -1585,4 +1607,52 @@ li:focus .cart {
 
   background-color: transparent;
   border: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-bounce {
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
