@@ -12,6 +12,10 @@ var isStorageSupport = true;
 var forenameStorage;
 var emailStorage;
 
+var sliderNav = document.querySelectorAll(".slider-nav-button");
+var sliderItems = document.querySelectorAll(".slider-item");
+var currentSlide = document.querySelector(".slider-item-current");
+
 try {
   forenameStorage = localStorage.getItem("name");
   emailStorage = localStorage.getItem("email");
@@ -70,3 +74,13 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+for (var i = 0; i < sliderNav.length; i++) {
+  sliderNav[i].addEventListener("click", function(evt) {
+    var index = i;
+    currentSlide.classList.remove("slider-item-current");
+    console.log(i);
+    sliderItems[index].classList.add("slider-item-current");
+  })
+
+};

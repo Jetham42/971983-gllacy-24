@@ -872,6 +872,8 @@ a.promotions-button {
 }
 
 .map {
+  position: relative;
+
   display: flex;
   justify-content: center;
 }
@@ -1220,6 +1222,8 @@ h1 {
 }
 
 .filter-item select {
+  position: relative;
+
   padding: 6px 14px 7px 11px;
 
   color: #ffffff;
@@ -1228,6 +1232,21 @@ h1 {
   background-color: rgba(248, 247, 244, 0.2);
   border: none;
   border-radius: 15px;
+}
+
+.filter-item select::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  background: url(../img/select-triangle.svg) no-repeat 0 0;
 }
 
 .filter-item select:focus {
