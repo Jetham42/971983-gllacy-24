@@ -9,6 +9,8 @@ body {
   color: #ffffff;
   
   background-color: #849d8f;  
+  
+  transition: background-color 2s;
 }
 
 body.inner-page {
@@ -490,6 +492,7 @@ li:focus .log-in-form {
 .slider-item-current {
   opacity: 1;
   pointer-events: auto;
+  transition: opacity 2s;
 }
 
 .slider-item p {

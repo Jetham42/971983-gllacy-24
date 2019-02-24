@@ -14,7 +14,6 @@ var emailStorage;
 
 var sliderNav = document.querySelectorAll(".slider-nav-button");
 var sliderItems = document.querySelectorAll(".slider-item");
-var currentSlide = document.querySelector(".slider-item-current");
 
 try {
   forenameStorage = localStorage.getItem("name");
@@ -77,10 +76,14 @@ window.addEventListener("keydown", function (evt) {
 
 for (var i = 0; i < sliderNav.length; i++) {
   sliderNav[i].addEventListener("click", function(evt) {
-    var index = i;
+    var element = evt.target;
+    var currentSlide = document.querySelector(".slider-item-current");
     currentSlide.classList.remove("slider-item-current");
-    console.log(i);
-    sliderItems[index].classList.add("slider-item-current");
+    sliderItems[element.dataset.id].classList.add("slider-item-current");
+    var currentSliderButoon = document.querySelector(".slider-nav-button-current");
+    currentSliderButoon.classList.remove("slider-nav-button-current");
+    element.classList.add("slider-nav-button-current");
+    document.body.style.backgroundColor = element.dataset.color;
   })
 
 };
