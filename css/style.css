@@ -427,8 +427,9 @@ li:focus .log-in-form {
 }
 
 .slider-list {
-  margin: 0;
+  margin: -117px 0 118px 0;
   padding: 0;
+  height: 530px;
 
   font-size: 60px;
   line-height: 60px;
@@ -440,7 +441,9 @@ li:focus .log-in-form {
 .slider-nav {
   display: flex;
   position: absolute;
-  top: 562px;
+  top: 564px;
+  left: 0;
+  z-index: 2;
   margin: 0;
   order: -1;
   padding: 0;
@@ -473,8 +476,20 @@ li:focus .log-in-form {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin: -117px 0 -234px 0;
+  width: 1065px;
   height: 881px;
+  opacity: 0;
+  margin: 0 0 135px 0;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.slider-item-current {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .slider-item p {
@@ -487,19 +502,19 @@ li:focus .log-in-form {
 .slider-item:nth-child(1) {
   background-image: url(../img/background-ice-cream-1.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .slider-item:nth-child(2) {
   background-image: url(../img/background-ice-cream-2.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .slider-item:nth-child(3) {
   background-image: url(../img/background-ice-cream-3.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .button {
