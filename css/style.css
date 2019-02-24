@@ -10,7 +10,7 @@ body {
   
   background-color: #849d8f;  
   
-  transition: background-color 2s;
+  transition: background-color 1s;
 }
 
 body.inner-page {
@@ -330,6 +330,21 @@ li:focus .search-form {
   color: #323232;
 }
 
+.user-block input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.user-block input:-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.user-block input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
 .user-block input::placeholder {
   font-weight: 400;
   color: #999999;
@@ -487,12 +502,12 @@ li:focus .log-in-form {
   left: 40px;
   bottom: 0;
   pointer-events: none;
+  transition: opacity 1s;
 }
 
 .slider-item-current {
   opacity: 1;
   pointer-events: auto;
-  transition: opacity 2s;
 }
 
 .slider-item p {
@@ -1645,6 +1660,24 @@ li:focus .cart {
 
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
+}
+
+.feedback-form-item input::-webkit-input-placeholder,
+.feedback-form-item textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.feedback-form-item input:-ms-input-placeholder,
+.feedback-form-item textarea:-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.feedback-form-item input::-ms-input-placeholder,
+.feedback-form-item textarea::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
 }
 
 .feedback-form-item input::placeholder,
