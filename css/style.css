@@ -96,6 +96,10 @@ a:active {
   padding: 0;
 }
 
+.header-column-wrapper {
+  position: relative;
+}
+
 .user-block {
   display: flex;
   justify-content: flex-end;
@@ -423,10 +427,13 @@ li:focus .log-in-form {
 }
 
 .working-info {
+  position: absolute;
+  top: 58px;
+  right: 0;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 10px 0 0 0;
 
   font-weight: 700;
 }
@@ -450,7 +457,7 @@ li:focus .log-in-form {
 }
 
 .slider-list {
-  margin: -117px 0 118px 0;
+  margin: -117px 0 155px 0;
   padding: 0;
   height: 530px;
 
@@ -464,7 +471,7 @@ li:focus .log-in-form {
 .slider-nav {
   display: flex;
   position: absolute;
-  top: 564px;
+  top: 602px;
   left: 0;
   z-index: 2;
   margin: 0;
@@ -504,7 +511,7 @@ li:focus .log-in-form {
   opacity: 0;
   margin: 0 0 135px 0;
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 40px;
   bottom: 0;
   pointer-events: none;
@@ -1084,7 +1091,7 @@ a.contact-button {
   z-index: 1;
 
   display: flex;
-  margin: -17px 0 4px 0;
+  margin: 21px 200px 4px 0;
   padding: 0;
 
   font-size: 14px;
@@ -1894,13 +1901,10 @@ body::before {
   pointer-events: auto;
 }
 
-.map .google-maps {
+.map .yandex-map {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
-  width: 1200px;
-  height: 430px;
 }

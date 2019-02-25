@@ -88,20 +88,27 @@ for (var i = 0; i < sliderNav.length; i++) {
 
 };
 
-function initMap() {
-  var coordinates = {lat: 59.938723, lng: 30.323072},
-  
-      map = new google.maps.Map(document.getElementById("map"), {
-          center: coordinates,
-          zoom: 8,
-          disableDefaultUI: true,
-          scrollwheel: false,
+ymaps.ready(function () {
+  var myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 16
+      }, {
+          searchControlProvider: "yandex#search"
+      }),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: "default#image",
+          // Своё изображение иконки метки.
+          iconImageHref: "img/map-marker.svg",
+          // Размеры метки.
+          iconImageSize: [80, 140],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [40, 140]
       });
 
-      image = "img/map-marker.svg",
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        icon: image
-      });
-}
+  myMap.geoObjects
+      .add(myPlacemark);
+});
