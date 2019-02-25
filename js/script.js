@@ -87,3 +87,21 @@ for (var i = 0; i < sliderNav.length; i++) {
   })
 
 };
+
+function initMap() {
+  var coordinates = {lat: 59.938723, lng: 30.323072},
+  
+      map = new google.maps.Map(document.getElementById("map"), {
+          center: coordinates,
+          zoom: 8,
+          disableDefaultUI: true,
+          scrollwheel: false,
+      });
+
+      image = "img/map-marker.svg",
+      marker = new google.maps.Marker({
+        position: coordinates,
+        map: map,
+        icon: image
+      });
+}

@@ -60,7 +60,7 @@ a:active {
 
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   display: flex;
   justify-content: space-between;
@@ -381,6 +381,12 @@ li:focus .log-in-form {
   top: 6px;
   left: 15px;
   fill: #ffffff;
+}
+
+.user-block .cart-button-full {
+  color: #323232;
+
+  background-color: #f8f7f4;
 }
 
 .cart-button .filled-area {
@@ -1069,9 +1075,15 @@ a.contact-button {
   margin: -1px 1px 0 0;
 }
 
-.breadcrumbs {
-  display: flex;
+.inner-page .main-nav {
+  position: static;
+}
 
+.breadcrumbs {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
   margin: -17px 0 4px 0;
   padding: 0;
 
@@ -1083,7 +1095,7 @@ a.contact-button {
 
 .breadcrumbs li::after {
   content: " » ";
-  padding: 0 5px 0 5px;
+  padding: 0 7px 0 4px;
 }
 
 .breadcrumbs li:last-child::after {
@@ -1101,7 +1113,7 @@ a.contact-button {
 }
 
 .page-title {
-  margin: 0 0 22px 0;
+  margin: 0 0 24px 0;
 }
 
 h1 {
@@ -1257,14 +1269,27 @@ h1 {
 .filter-item select {
   position: relative;
 
-  padding: 6px 14px 7px 11px;
+  box-sizing: border-box;
+  /* padding: 6px 14px 7px 11px; */
+  padding: 8px 30px 10px 16px;
+  max-width: 191px;
+  max-height: 36px;
 
   color: #ffffff;
   text-transform: lowercase;
 
-  background-color: rgba(248, 247, 244, 0.2);
+  background: url("../img/select-triangle.svg") rgba(248, 247, 244, 0.2) no-repeat;
+  background-position: 168px 14px;
   border: none;
   border-radius: 15px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.filter-item select::-ms-expand {
+  display: none;
+  padding: 6px 14px 7px 11px;
 }
 
 .filter-item select::before {
@@ -1285,7 +1310,8 @@ h1 {
 .filter-item select:focus {
   color: #323232;
 
-  background-color: #f8f7f4;
+  background: url("../img/select-triangle-black.svg") #f8f7f4 no-repeat;
+  background-position: 168px 14px;
 }
 
 .translucent-filter-item li {
@@ -1411,7 +1437,7 @@ h1 {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin: 52px -10px 32px 0; 
+  margin: 44px -8px 37px 0; 
 
   line-height: 18px;
   font-weight: 500;
@@ -1866,4 +1892,15 @@ body::before {
 
   opacity: 1;
   pointer-events: auto;
+}
+
+.map .google-maps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 1200px;
+  height: 430px;
 }
