@@ -91,22 +91,17 @@ for (var i = 0; i < sliderNav.length; i++) {
 ymaps.ready(function () {
   var myMap = new ymaps.Map("map", {
           center: [59.938631, 30.323055],
-          zoom: 16
+          zoom: 16,
+          controls: []
       }, {
           searchControlProvider: "yandex#search"
       }),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          // Опции.
-          // Необходимо указать данный тип макета.
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), false, {
           iconLayout: "default#image",
-          // Своё изображение иконки метки.
           iconImageHref: "img/map-marker.svg",
-          // Размеры метки.
           iconImageSize: [80, 140],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [40, 140]
+          iconImageOffset: [-40, -140]
       });
 
   myMap.geoObjects

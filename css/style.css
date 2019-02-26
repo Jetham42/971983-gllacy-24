@@ -749,7 +749,6 @@ a.promotions-button {
 
 .catalog-item .catalog-item-button {
   box-sizing: border-box;
-  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -767,11 +766,18 @@ a.promotions-button {
   text-align: center;
 
   border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .catalog-item:hover .catalog-item-button,
 .catalog-item:focus .catalog-item-button {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+.catalog-item:focus-within .catalog-item-button {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .features {
