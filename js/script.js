@@ -90,19 +90,19 @@ for (var i = 0; i < sliderNav.length; i++) {
 
 ymaps.ready(function () {
   var myMap = new ymaps.Map("map", {
-          center: [59.938631, 30.323055],
-          zoom: 16,
-          controls: []
-      }, {
-          searchControlProvider: "yandex#search"
-      }),
+    center: [59.938631, 30.323055],
+    zoom: 16,
+    controls: []
+  }, {
+    searchControlProvider: "yandex#search"
+  }),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), false, {
-          iconLayout: "default#image",
-          iconImageHref: "img/map-marker.svg",
-          iconImageSize: [80, 140],
-          iconImageOffset: [-40, -140]
-      });
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), false, {
+      iconLayout: "default#image",
+      iconImageHref: "img/map-marker.svg",
+      iconImageSize: [80, 140],
+      iconImageOffset: [-40, -140]
+  });
 
   myMap.geoObjects
       .add(myPlacemark);
