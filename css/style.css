@@ -991,7 +991,6 @@ a.promotions-button {
 
 .subscription-block form {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .subscription-block input {
@@ -1035,6 +1034,7 @@ a.promotions-button {
 }
 
 .subscription-button {
+  flex-shrink: 0;
   padding: 10px 19px;
 
   font-family: "Roboto", Arial, sans-serif;
