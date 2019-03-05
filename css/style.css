@@ -382,6 +382,7 @@ li:focus-within .search-form {
 }
 
 .search-form input {
+  box-sizing: border-box;
   padding: 10px 0 10px 15px;
   width: 100%;
   border: 1px solid #d3d3d2;
